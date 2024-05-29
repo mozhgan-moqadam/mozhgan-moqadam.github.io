@@ -9,10 +9,18 @@ import { SkillComponent } from './skill/skill.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,ProfilComponent,EducationComponent,ExperienceComponent,SkillComponent,],
+  imports: [RouterOutlet,
+    HeaderComponent,
+    ProfilComponent,
+    EducationComponent,
+    ExperienceComponent,
+    SkillComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'personal-portfolio';
+
+  
 }
