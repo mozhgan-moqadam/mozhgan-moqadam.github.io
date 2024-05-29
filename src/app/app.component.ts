@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { ProfilComponent } from './profil/profil.component';
+import { ProfilComponent } from './profile/profil.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillComponent } from './skill/skill.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,8 @@ import { SkillComponent } from './skill/skill.component';
     EducationComponent,
     ExperienceComponent,
     SkillComponent,
+    LanguagesComponent,
+    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
