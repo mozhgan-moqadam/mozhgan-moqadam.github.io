@@ -1,9 +1,94 @@
+.experience {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
 
-.container {
-    padding: 15px;
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.experience-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.43);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px; /* Adjusted for responsiveness */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.experience-card span {
+  display: block; 
+  text-align: center;
+color: #666;
+}
+
+.responsive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.responsive-list li {
+  margin: 0.5rem 0;
+  list-style-type:square;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
   }
-  
-  .edu {
-    margin-bottom: 15px;
+
+  .section-subtitle {
+    font-size: 1.25rem;
   }
-  
+
+  .experience-content {
+    flex-direction: column; /* Stack cards vertically on small screens */
+  }
+
+  .experience-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-card {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .experience-card {
+    max-width: 500px;
+  }
+}
