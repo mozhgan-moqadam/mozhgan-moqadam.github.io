@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
-import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillComponent } from './skill/skill.component';
-import { LanguagesComponent } from './languages/languages.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
@@ -15,10 +13,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
   imports: [RouterOutlet,
     HeaderComponent,
     ProfileComponent,
-    EducationComponent,
     ExperienceComponent,
     SkillComponent,
-    LanguagesComponent,
     ContactComponent,
     AboutMeComponent
   ],
@@ -26,7 +22,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'personal-portfolio';
+ 
 
   
 }
