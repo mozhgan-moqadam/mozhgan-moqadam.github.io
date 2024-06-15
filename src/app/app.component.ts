@@ -22,7 +22,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  // Function to scroll to the top of the page
+ 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -31,7 +31,7 @@ export class AppComponent {
   onWindowScroll() {
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     if (scrollToTopBtn) {
-      if (window.pageYOffset > 300) { // Show button after 300px of scrolling
+      if (window.pageYOffset > 300) { 
         scrollToTopBtn.style.display = 'block';
       } else {
         scrollToTopBtn.style.display = 'none';

@@ -1,19 +1,18 @@
 /* styles.css */
 #scrollToTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Place the button 20px from the bottom */
-    right: 20px; /* Place the button 20px from the right */
-    background-color: #555; /* Set a background color */
-    color: white; /* Text color */
-    border: none; /* Remove borders */
-    padding: 10px; /* Some padding */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    z-index: 1000; /* Ensure it is on top of other elements */
-  }
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #555; 
+    color: white; 
+    border: none; 
+    padding: 10px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    z-index: 1000; }
   
   #scrollToTopBtn:hover {
-    background-color: #333; /* Add a dark-grey background on hover */
+    background-color: #333; 
   }
   
