@@ -1,11 +1,10 @@
 <nav class="navbar">
   <div class="navbar-brand">
-    
   </div>
   <div class="navbar-menu">
-    <a class="navbar-item"  routerLink="/about">About</a>
-    <a class="navbar-item" routerLink="/experience">Experience</a>
-    <a class="navbar-item" routerLink="/contact">Projects</a>
-    <a class="navbar-item" routerLink="/contact">Contact</a>
+    <a class="navbar-item"  href="#about" (click)="scrollToSection('about')">About</a>
+    <a class="navbar-item" href="#experience" (click)="scrollToSection('experience')">Experience</a>
+    <a class="navbar-item" href="#project" (click)="scrollToSection('project')">Projects</a>
+    <a class="navbar-item" href="#contact" (click)="scrollToSection('contact')">Contact</a>
   </div>
 </nav>
