@@ -43,6 +43,16 @@ body {
   text-decoration: none;
   color: black;
 }
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
 
 .contact-icon {
   width: 24px;
