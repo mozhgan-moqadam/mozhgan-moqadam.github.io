@@ -7,10 +7,10 @@
   
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-padding-left: 150px;
+.navbar-brand img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
 }
 
 .navbar-menu {
