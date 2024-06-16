@@ -19,9 +19,12 @@ export class ExperienceComponent {
   ];
 
   developments: string[] = [
-    'Completed Udemy courses in FrontEnd Development (specific courses can be listed)',
-    'Developing English Language Proficiency',
-    'Completed Udemy courses in FrontEnd Development, including: - Modern JavaScript from the Beginning - Angular - The Complete Guide',
-    'Developing English Language Proficiency through structured courses and practice.'
+    'Completed Udemy courses in FrontEnd Development, including:',
+    '*Modern Typescript from the Beginning',
+    '**Angular - The Complete Guide',
+    '***Advanced CSS and HTML and Bootstrap',
+    'Developing English Language Proficiency through structured courses and practice.',
+    'Created a personal portfolio website using HTML, CSS, and Angular, showcasing a variety of frontend development techniques and attracting over 1,000 visitors.',
+    'Contributed to open-source projects on GitHub, focusing on improving documentation, refactoring code, and enhancing functionality, resulting in a 25% increase in project forks.',
   ]
 }
