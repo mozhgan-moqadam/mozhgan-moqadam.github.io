@@ -8,7 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 export const routes: Routes = [
-  { path: '', component: ProfileComponent },
+  { path: '', component: HeaderComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'skill', component: SkillComponent },
   { path: 'experience', component: ExperienceComponent },
