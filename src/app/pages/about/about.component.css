@@ -1,5 +1,5 @@
 .about {
-   background:url('/assets/home-bg.jpg') no-repeat center center/cover;
+  background: url('/assets/home-bg.jpg') no-repeat center center/cover;
   color: #efe4d2;
   min-height: 100vh;
   padding: 4rem 2rem;
@@ -14,10 +14,13 @@
   gap: 3rem;
   max-width: 1000px;
   align-items: center;
+  justify-content: center;
 }
 
+/* Text section */
 .about-text {
-  flex: 1;
+  flex: 1 1 400px;
+  min-width: 280px;
 }
 
 .about-text h2 {
@@ -37,6 +40,7 @@
   font-weight: bold;
 }
 
+/* Button */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -53,18 +57,22 @@
   color: #EFE4D2;
 }
 
+/* Photo section */
 .about-photo {
-  flex: 1;
+  flex: 1 1 300px;
   text-align: center;
 }
 
 .about-photo img {
   max-width: 250px;
+  width: 100%;
+  height: auto;
   border-radius: 15%;
   border: 4px solid #254D70;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Skills */
 .skills {
   margin-top: 3rem;
   text-align: left;
@@ -74,7 +82,6 @@
   font-size: 1.8rem;
   margin-bottom: 2rem;
   color: #E3A14B;
-  
 }
 
 .skills-grid {
@@ -93,7 +100,7 @@
   padding: 0.8rem 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .skill i {
@@ -113,5 +120,71 @@
   color: #EFE4D2;
 }
 
+/* ========================= */
+/* 🌍 Responsive Adjustments */
+/* ========================= */
 
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .about {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
 
+  .about-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .skills h3 {
+    text-align: center;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-photo img {
+    max-width: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .skill i {
+    font-size: 1.2rem;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem;
+  }
+}
