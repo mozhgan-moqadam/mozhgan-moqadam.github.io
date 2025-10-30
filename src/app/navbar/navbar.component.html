@@ -1,0 +1,28 @@
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a routerLink="/">{{ 'NAV.HOME' | translate }}</a></li>
+    <li><a routerLink="/projects">{{ 'NAV.PROJECTS' | translate }}</a></li>
+    <li><a routerLink="/about">{{ 'NAV.ABOUT' | translate }}</a></li>
+    <li><a routerLink="/contact">{{ 'NAV.CONTACT' | translate }}</a></li>
+  </ul>
+  
+ <button class="lang-switch" (click)="switchLang()" aria-label="Switch language">
+  <img *ngIf="currentLang === 'en'"
+    src="https://flagcdn.com/16x12/gb.png"
+    srcset="https://flagcdn.com/32x24/gb.png 2x,
+            https://flagcdn.com/48x36/gb.png 3x"
+    width="24"
+    height="18"
+    alt="English" />
+
+  <img *ngIf="currentLang === 'de'"
+    src="https://flagcdn.com/16x12/de.png"
+    srcset="https://flagcdn.com/32x24/de.png 2x,
+            https://flagcdn.com/48x36/de.png 3x"
+    width="24"
+    height="18"
+    alt="Deutsch" />
+</button>
+</nav>
+

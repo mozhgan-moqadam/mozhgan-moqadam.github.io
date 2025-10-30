@@ -1,0 +1,80 @@
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url('/assets/home-bg.jpg') no-repeat center center/cover;
+  color: #EFE4D2;
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content h1 .highlight {
+  color: #DDA853;
+  font-weight: bold;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.content .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #954C2E;
+  border-radius: 4px;
+  color: #954C2E;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.content .btn:hover {
+  background: #954C2E;
+  color: #EFE4D2;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    max-width: 90vw;
+  }
+
+  .content h1 {
+    font-size: 1.9rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .content .btn {
+    padding: 0.65rem 1.1rem;
+  }
+}
