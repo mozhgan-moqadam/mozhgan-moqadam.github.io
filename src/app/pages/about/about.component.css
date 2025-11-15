@@ -85,10 +85,11 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  max-width: 900px;
   margin: 0 auto;
 }
 

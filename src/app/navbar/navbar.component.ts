@@ -12,6 +12,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 })
 export class NavbarComponent {
 	currentLang = 'en';
+	isHamburgerOpen = false;
 	constructor(private translate: TranslateService) {
 		translate.addLangs(['en', 'de']);
 		translate.setDefaultLang('en');
@@ -21,5 +22,13 @@ export class NavbarComponent {
 	switchLang() {
 		this.currentLang = this.currentLang === 'en' ? 'de' : 'en';
 		this.translate.use(this.currentLang);
+	}
+
+	toggleHamburger() {
+		this.isHamburgerOpen = !this.isHamburgerOpen;
+	}
+
+	closeHamburger() {
+		this.isHamburgerOpen = false
 	}
 }
