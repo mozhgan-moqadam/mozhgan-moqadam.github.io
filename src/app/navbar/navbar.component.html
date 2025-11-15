@@ -1,6 +1,6 @@
 <nav class="navbar">
   <div [class.nav-links]="isHamburgerOpen" [class.inactive]="!isHamburgerOpen" (click)="closeHamburger()">
-    <a class="navBtn">{{ 'NAV.HOME' | translate }}</a>
+    <a class="navBtn" routerLink="/">{{ 'NAV.HOME' | translate }}</a>
     <a class="navBtn" routerLink="/projects">{{ 'NAV.PROJECTS' | translate }}</a>
     <a class="navBtn" routerLink="/about">{{ 'NAV.ABOUT' | translate }}</a>
     <a class="navBtn" routerLink="/contact">{{ 'NAV.CONTACT' | translate }}</a>
